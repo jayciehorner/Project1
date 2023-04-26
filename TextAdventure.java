@@ -2,7 +2,7 @@ package com.skillstorm.project1;
 
 import java.util.Scanner;
 
-public class TextAdventureController extends Player {
+public class TextAdventure extends Player {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
@@ -36,22 +36,44 @@ public class TextAdventureController extends Player {
 //			}
 //			break;
 //		}
-		
-		 while((player.equalsIgnoreCase("Stanley") || player.equalsIgnoreCase("Sarah") || player.equalsIgnoreCase("Tyler"))) {//error message
-		        if (in.next().equalsIgnoreCase("Stanley")){
-		        	System.out.println(stanley);
-		        } else if (in.next().equalsIgnoreCase("Sarah")){
-		        	System.out.println(sarah);
-		        } else if (in.next().equalsIgnoreCase("Tyler")) {
-		        	System.out.println(tyler);
-		        } else {
-		        	 System.out.println("Please chose a valid player");
-				        in.next();
-		        
-		        }
-		    }
 
-		System.out.println("Time to begin your journey. " + "We begin by the gingerbread tree.\n");
+//		 while((player.equalsIgnoreCase("Stanley") || player.equalsIgnoreCase("Sarah") || player.equalsIgnoreCase("Tyler"))) {//error message
+//		        if (in.next().equalsIgnoreCase("Stanley")){
+//		        	System.out.println(stanley);
+//		        } else if (in.next().equalsIgnoreCase("Sarah")){
+//		        	System.out.println(sarah);
+//		        } else if (in.next().equalsIgnoreCase("Tyler")) {
+//		        	System.out.println(tyler);
+//		        } else {
+//		        	 System.out.println("Please chose a valid player");
+//				        in.next();
+//		        
+//		        }
+//		    }
+
+//		while (true) {
+//			System.out.println("Please choose a player to begin.\n");
+//			player = in.next();
+//			if ((!player.equalsIgnoreCase("Stanley") || player.equalsIgnoreCase("Sarah")
+//					|| player.equalsIgnoreCase("Tyler"))) {
+//			} else
+//				break;
+
+	//	System.out.println("Please choose a player to begin\n");
+	//	player = in.next();
+
+		while ((! player.equalsIgnoreCase("Stanley") || ! player.equalsIgnoreCase("Sarah")
+				|| ! player.equalsIgnoreCase("Tyler"))) {// error message
+			System.out.println("ERROR Please enter a valid player");
+			System.out.println("");
+			player = in.next();
+			if (player.equalsIgnoreCase("Stanley") || player.equalsIgnoreCase("Sarah")
+				|| player.equalsIgnoreCase("Tyler")) {
+				break;
+			}
+		}
+
+		System.out.println("Time to begin your journey. " + player + ". We begin by the gingerbread tree.\n");
 
 		Player.promptEnterKey();
 
