@@ -39,7 +39,6 @@ public class Player {
 	}
 
 	public static void scene1Result() {
-
 		String result = TextAdventure.in.next();
 		do {
 			if (result.equalsIgnoreCase("A")) {
@@ -64,6 +63,7 @@ public class Player {
 			} else {
 				System.out.println("Please choose a valid path.");
 				TextAdventure.in.next();
+				
 			}
 		} while (true);
 	}
