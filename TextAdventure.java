@@ -1,22 +1,18 @@
 package com.skillstorm.project1;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class TextAdventure extends Player {
-	public static Scanner in = new Scanner(System.in);
+	static Scanner in = new Scanner(System.in);
 
 	public static void main(String[] args) {
+	
+		
+		
 
 		Player stanley = new Player("Stanley", (int) 1, (String) "<3 <3 <3", (int) 5);
 		Player sarah = new Player("Sarah", (int) 5, (String) "<3 <3 <3", (int) 3);
 		Player tyler = new Player("Tyler", (int) 4, (String) "<3 <3 <3", (int) 1);
-		
-	try {
-		ASCIIArt.main(args);
-	} catch (IOException e) {
-		e.printStackTrace();
-	}
 
 		System.out.println(
 				"Greetings from Candy Land! In a world of candy and sunshine, it sure is a difficult road to the Candy Castle.\n"
@@ -55,7 +51,7 @@ public class TextAdventure extends Player {
 /////////////////// SCENE 1 BEGIN /////////////////////////////////
 		System.out.println(Scene.scene1A());
 		Scene.scene1Result();
-	//	Scene.promptEnterKey();
+		// Scene.promptEnterKey();
 /////////////////// SCENE 1 END /////////////////////////////////
 
 		System.out.println("");

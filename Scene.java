@@ -1,7 +1,7 @@
 package com.skillstorm.project1;
 
 public class Scene {
-	private static String happiness;
+static String happiness = "<3 <3 <3";
 	
 	public static void promptEnterKey() {
 		System.out.println("Press \"ENTER\" to continue...");
@@ -45,10 +45,10 @@ public class Scene {
 		} while (true);
 
 		if (result1.equalsIgnoreCase("B") || result1.equalsIgnoreCase("C")) {
-			String happiness = "<3 <3";
+			happiness = "<3 <3";
 			System.out.println("Happiness is now: " + happiness);
 		} else {
-			String happiness = "<3 <3 <3";
+			happiness = "<3 <3 <3";
 			System.out.println("Happiness: " + happiness);
 		}
 		return "Press \"ENTER\" to continue...";
@@ -92,13 +92,13 @@ public class Scene {
 		} while (true);
 
 		if (happiness.equals("<3 <3 <3") && result2.equalsIgnoreCase("A")) {
-			String happiness = "<3 <3 <3";
+			happiness = "<3 <3 <3";
 			System.out.println("Happiness: " + happiness);
 		} else if (happiness.equals("<3 <3") && result2.equalsIgnoreCase("B") || result2.equalsIgnoreCase("C")) {
-			String happiness = "<3";
+			happiness = "<3";
 			System.out.println("Happiness is now: " + happiness);
 		} else {
-			String happiness = "<3 <3";
+			happiness = "<3 <3";
 			System.out.println("Happiness is now " + happiness);
 		}
 		return "Press \"ENTER\" to continue...";
@@ -143,20 +143,20 @@ public class Scene {
 
 		} while (true);
 		if (happiness.equals("<3 <3 <3") && result3.equals("C")) {
-			String happiness = "<3 <3 <3";
+			happiness = "<3 <3 <3";
 			System.out.println("Happiness: " + happiness);
 		} else if (happiness.equals("<3") && result3.equalsIgnoreCase("A") || result3.equalsIgnoreCase("B")) {
-			String happiness = ":(";
+			happiness = ":(";
 			System.out.println(
 					"Happiness: " + happiness + "\nYou are all out of happiness! You decide to return home and "
 							+ "try the journey to Candy Castle another day...");
 			System.exit(0);
 		} else if (happiness.equals("<3 <3") && result3.equalsIgnoreCase("A") || result3.equalsIgnoreCase("B")) {
-			String happiness = "<3";
+			happiness = "<3";
 			System.out.println("Happiness is now: " + happiness);
 
 		} else {
-			String happiness = "<3 <3";
+			happiness = "<3 <3";
 			System.out.println("Happiness: " + happiness);
 
 		}
@@ -197,18 +197,18 @@ public class Scene {
 
 		} while (true);
 		if (happiness.equals("<3 <3 <3") && result4.equals("C")) {
-			String happiness = "<3 <3 <3";
+			happiness = "<3 <3 <3";
 			System.out.println("Happiness: " + happiness);
 		} else if (happiness.equals("<3 <3") && result4.equalsIgnoreCase("A") || result4.equalsIgnoreCase("B")) {
-			String happiness = "<3";
+			happiness = "<3";
 			System.out.println("Happiness is now: " + happiness);
 		} else if (happiness.equals("<3") && result4.equals("A") || result4.equals("B")) {
-			String happiness = ":(";
+			happiness = ":(";
 			System.out.println("Happiness is now:" + happiness
 					+ "\nYou are all out of happiness! You decide to return home and try the journey to Candy Castle another day...");
 			System.exit(0);
 		} else {
-			String happiness = "<3 <3";
+			happiness = "<3 <3";
 			System.out.println("Happiness: " + happiness);
 		}
 	}
@@ -252,18 +252,18 @@ public class Scene {
 
 		} while (true);
 		if (happiness.equals("<3 <3 <3") && result5.equals("B")) {
-			String happiness = "<3 <3 <3";
+			happiness = "<3 <3 <3";
 			System.out.println("Happiness: " + happiness);
 		} else if (happiness.equals("<3 <3") && result5.equalsIgnoreCase("A") || result5.equalsIgnoreCase("C")) {
-			String happiness = "<3";
+			happiness = "<3";
 			System.out.println("Happiness is now: " + happiness);
 		} else if (happiness.equals("<3") && result5.equals("A") || result5.equals("C")) {
-			String happiness = ":(";
+			happiness = ":(";
 			System.out.println("Happiness is now: " + happiness
 					+ "\nYou are all out of happiness! You decide to return home and try the journey to Candy Castle another day...");
 			System.exit(0);
 		} else {
-			String happiness = "<3 <3";
+			happiness = "<3 <3";
 			System.out.println("Happiness: " + happiness);
 		}
 	}
