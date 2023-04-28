@@ -1,5 +1,6 @@
 package com.skillstorm.project1;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class TextAdventure extends Player {
@@ -10,6 +11,12 @@ public class TextAdventure extends Player {
 		Player stanley = new Player("Stanley", (int) 1, (String) "<3 <3 <3", (int) 5);
 		Player sarah = new Player("Sarah", (int) 5, (String) "<3 <3 <3", (int) 3);
 		Player tyler = new Player("Tyler", (int) 4, (String) "<3 <3 <3", (int) 1);
+		
+	try {
+		ASCIIArt.main(args);
+	} catch (IOException e) {
+		e.printStackTrace();
+	}
 
 		System.out.println(
 				"Greetings from Candy Land! In a world of candy and sunshine, it sure is a difficult road to the Candy Castle.\n"
